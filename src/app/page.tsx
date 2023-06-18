@@ -10,7 +10,10 @@ export default function Home() {
     <>   
     <div className="flex">
            <GraficoBarra/>
-    <GraficoPizza/>
+           
+
+    {/*<GraficoPizza/>*/}
+           
     </div>
 
     </>

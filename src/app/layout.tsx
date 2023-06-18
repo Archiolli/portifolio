@@ -17,8 +17,13 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={inter.className}>
         
+        <>
+        <div className="bg-image bg-no-repeat bg-cover bg-center h-screen w-screen">
+          {children}
+          </div>
         
-        {children}</body>
+        </>
+        </body>
     </html>
   )
 }
