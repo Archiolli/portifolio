@@ -10,6 +10,10 @@ module.exports = {
       backgroundImage: theme => ({
         'image': "url('../app/utils/img/back.jpg')",
       }),
+      colors: {
+        'navzin': 'rgba(47, 57, 94, 0.49)',
+        'mouseHoverNav' :  '#FF9900'
+      },
     },
   },
   plugins: [],
