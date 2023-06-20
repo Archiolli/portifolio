@@ -15,10 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
+      <body className={`${inter.className}`}>
         
         <>
-        <div className="bg-image bg-no-repeat bg-cover bg-center h-screen w-screen">
+        <div className='bg-image bg-no-repeat bg-cover bg-center h-screen w-screen fixed'>
           {children}
           </div>
         

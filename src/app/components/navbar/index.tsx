@@ -12,7 +12,7 @@ export default function Navbar() {
 				<div className='w-full text-center justify-center absolute  text-white bg-navzin'>
 					<div className='px-40'>
 						<div className='h-16 flex justify-between items-center'>
-							<p className={`${StancilOne.className} mr-20 text-3xl`}>João Archiolli</p>
+							<p className={`${StancilOne.className} mr-24 text-3xl flex-nowrap`}>João Archiolli</p>
 							<p className='hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Sobre mim</p>
 							<p className='hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Projetos</p>
 							<p className='hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Experiência</p>
