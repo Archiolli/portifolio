@@ -9,17 +9,24 @@ const StancilOne = Saira_Stencil_One({
 	
 export default function Navbar() {
 		return(
-				<div className='w-full text-center justify-center absolute  text-white bg-navzin'>
-					<div className='px-40'>
-						<div className='h-16 flex justify-between items-center'>
-							<p className={`${StancilOne.className} mr-24 text-3xl flex-nowrap`}>João Archiolli</p>
-							<p className='hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Sobre mim</p>
-							<p className='hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Projetos</p>
-							<p className='hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Experiência</p>
-							<p className='hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Contato</p>
-						</div>
-					</div>						
-				</div>
+<>	
+
+				<header>
+					<nav className={`px-32 text-white flex justify-around items-center bg-navzin h-16`}>
+						<div className={`${StancilOne.className} text-3xl`}>João Archiolli</div>
+						
+						<ul className='flex	list-none'>
+							<li className='ml-16 hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Sobre mim</li>
+							<li className='ml-16 hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Projetos</li>
+							<li className='ml-16 hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4'>Experiencia</li>
+							<li className='ml-16 hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4 '>contato</li>
+						</ul>
+					</nav>
+				</header>
+
+				
+</>
+			
 			 
 		)   
 }

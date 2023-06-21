@@ -12,7 +12,9 @@ module.exports = {
       }),
       colors: {
         'navzin': 'rgba(47, 57, 94, 0.49)',
-        'mouseHoverNav' :  '#FF9900'
+        'mouseHoverNav' :  '#FF9900',
+        'lineCard': '#7A85AD',
+        'cardContent': '#2F395E'
       },
     },
   },

@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         
         <>
-        <div className='bg-image bg-no-repeat bg-cover bg-center h-screen w-screen fixed'>
+        <div className='bg-image bg-scroll bg-no-repeat bg-cover bg-center h-screen w-screen fixed'>
           {children}
           </div>
         
