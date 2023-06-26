@@ -1,34 +1,43 @@
-import Card from "../card"
-  
+import CardSobreMim from "../cardSobreMim";
+import Container from "../container";
+
 const SobreMim = () => {
 
   return (
-    <>  
-        <div className="w-full h-screen"> 
+    <>
+    <Container>
+    <div className="flex justify-center items-center">
+        <div className="p-16 pb-4 text-center">
+            <CardSobreMim
+            title="Imagem"
+            content={`-Competência e tecnologias
+            -Desenvolvedor Full-stack            
+            -NextJs, Node, TypeScript, Tailwind, MySQL`}    
+            isAmount={false}       
+          />
+          </div>
+          
+          <div className="p-14">
+            <CardSobreMim
+            title="Sobre mim"
+            content={`Olá, me chamo João, tenho 22 anos, solteiro, fui atleta profissional por dez anos, o que me possibilitou 
+            conhecer a area de programação pela faculdade. E então, a partir daí comecei a estudar mais
+            incisivamente a área, posteriormente me profissionalizar.`}
+            isAmount={true}
+            adicionalContent="Gerar valor aos projetos realizados
+            Ser um profissional interado com a comunidade de programação
+            Adquirir experiência com pessoas mais capacitadas para sempre evoluir"
+            adicionalTitle="Objetivos"
+          />
+          </div>
+          
 
-            <div className="flex px-28">
-    
-             <Card text={'Imagem'} content={`-Desenvolvedor Full-stack
-            -NextJs, Node, TypeScript, Tailwind, MySQL`}
-            width="3/5"
-            />
-               
-        
 
-            <span className="ml-24">
-                <Card text={'Sobre mim'} content={`Olá, me chamo João, tenho 22 anos, solteiro, fui atleta profissional por dez anos, o que me possibilitou conhecer a area de programação pela faculdade. E então,
-             a partir daí comecei a estudar mais incisivamente a área,
-              posteriormente me profissionalizar.`}
-              width={"12"}
-              /> 
-            </span> 
-            </div>
-            
-           
+          
+        </div>
+    </Container>
 
-            
-        </div> 
-   
+
     </>
   )
 }
