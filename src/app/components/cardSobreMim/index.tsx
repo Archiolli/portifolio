@@ -15,8 +15,6 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
   const [adicionalInput, setadicionalInput] = useState(hasInput || false)
   const [amount, setAmount] = useState(isAmount || false);
 
-  const nameHtmlProp = 
-
   return (
     <div className={`rounded-2xl bg-cardContent overflow-hidden shadow-lg`}>
       <div className="px-6 py-2">
