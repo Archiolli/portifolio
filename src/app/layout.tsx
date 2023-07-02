@@ -15,10 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} h-full w-full overflow-y-hidden`}>
         
         <>
-        <div className='bg-image bg-scroll bg-no-repeat bg-cover bg-center h-screen w-screen fixed'>
+        <div className='bg-image bg-scroll bg-no-repeat bg-cover bg-center h-full w-full fixed'>
           {children}
           </div>
         

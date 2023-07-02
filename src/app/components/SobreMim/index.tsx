@@ -6,8 +6,8 @@ const SobreMim = () => {
   return (
     <>
     <Container>
-    <div className="flex justify-center items-center">
-        <div className="p-16 pb-4 text-center">
+    <div className="flex flex-wrap justify-center items-center h-screen">
+        <div className="p-16 pb-4 grow basis-56 text-center">
             <CardSobreMim
             title="Imagem"
             content={`-Competência e tecnologias
@@ -17,7 +17,7 @@ const SobreMim = () => {
           />
           </div>
           
-          <div className="p-14">
+          <div className="p-14 grow basis-96">
             <CardSobreMim
             title="Sobre mim"
             content={`Olá, me chamo João, tenho 22 anos, solteiro, fui atleta profissional por dez anos, o que me possibilitou 
