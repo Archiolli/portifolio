@@ -13,14 +13,16 @@ export default function Contato() {
         <Container>
             <div className='h-screen w-full items-center flex justify-center'>
 
-                <div className="w-full px-96">
-                    <CardSobreMim
-                       
-                        title='Entre em contato'
-                        isAmount={false}
-                        hasInput={true}
-                    />
+                <div className=" lg:px-20 sm:px-10">
 
+                    <div className="w-full">
+                        <CardSobreMim
+                            title='Entre em contato'
+                            isAmount={false}
+                            hasInput={true}
+                        />
+
+                    </div>
                 </div>
 
 
