@@ -13,7 +13,9 @@ module.exports = {
         'logoRodrimar': "url('../app/utils/img/logoRodrimar.jpeg')",
         'logoUdemy': "url('../app/utils/img/logoUdemy.png')",
         'logoUnisanta': "url('../app/utils/img/logoUnisanta.png')",
-        'logoDiome': "url('../app/utils/img/logoDiome.png')"
+        'logoDiome': "url('../app/utils/img/logoDiome.png')",
+        'logoCursoEmVideo': "url('../app/utils/img/cursoEmVideoLogo.png')" ,
+        'logoOBTC': "url('../app/utils/img/OBTClogo.jpg')"
       }),
       colors: {
         'navzin': 'rgba(47, 57, 94, 0.49)',
@@ -22,7 +24,20 @@ module.exports = {
         'cardContent': '#2F395E',
         'inputColor': '#68568C'
       },
+      borderRadius: {
+        'none': '0',
+        'sm': '0.125rem',
+        DEFAULT: '0.25rem',
+        DEFAULT: '4px',
+        'md': '0.375rem',
+        'lg': '0.5rem',
+        'full': '9999px',
+        'large': '12px',
+      }
     },
   },
-  plugins: [],
+  plugins: [ 
+    require('tailwind-scrollbar'),
+    require('tailwind-scrollbar')({ nocompatible: true })
+  ],
 }

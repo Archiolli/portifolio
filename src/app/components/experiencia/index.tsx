@@ -14,7 +14,7 @@ const Experiencia = () => {
                         <CardSobreMim
                             title="Experiência profissional"
                             content={' '}
-                            asFormacoes={true}
+                            asExperiencia={true}
                         />
                     </div>
                     <div className="w-full pl-5">
@@ -22,7 +22,7 @@ const Experiencia = () => {
                         <CardSobreMim
                             title="Formações academicas"
                             content={' '}
-                        />
+                            asFormacoes={true}  />
                     </div>
                 </div>
 

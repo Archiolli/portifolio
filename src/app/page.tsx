@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="overflow-x-hidden h-full w-full">
+      <div className="overflow-y-auto scrollbar scrollbar-corner-rounded-full scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-w-2 hover:scrollbar-thumb-sky-900 scrollbar-thumb-cardContent scrollbar-track-lineCard overflow-x-hidden h-full w-full  text-white">
         <Navbar />
         <SobreMim />
         <Projetos />
