@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} h-full w-full overflow-y-hidden`}>
+      <body className={`${inter.className} scroll-smooth h-full w-full overflow-y-hidden`}>
         
         <>
         <div className='bg-image bg-scroll bg-no-repeat bg-cover bg-center h-full w-full fixed'>

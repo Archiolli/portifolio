@@ -38,9 +38,6 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
 	const [isModalOpen1, setIsModalOpen1] = useState(false);
 	const [isModalOpen2, setIsModalOpen2] = useState(false);
 
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
-	const [message, setMessage] = useState('');
 
 
 
@@ -62,7 +59,7 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
 
 
 	return (
-		<div className={`rounded-2xl bg-opacity-30 bg-cardContent  ${hasOverflow === true ? 'overflow-y-auto' : 'overflow-hidden'} shadow-lg`}>
+		<div className={`rounded-2xl bg-opacity-30 bg-cardContent shadow-lg`}>
 			<div className="px-6 py-2">
 				<div className="text-xl mb-2 pr-14  font-normal text-white">{title}</div>
 				<div className="border-2 w-full flex justify-center items-center rounded-full border-solid border-lineCardSobreMim"></div>
@@ -127,15 +124,16 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
 						<div className="rounded-full h-28 w-28 bg-logoProdesan bg-cover  bg-center bg-no-repeat pr-28"></div>
 						<div className='flex justify-center items-center  w-3/4 h-28 text-center text-white'>PRODESAN – Progresso e Desenvolvimento de Santos</div>
 					</div>
-					<div className='text-white flex pb-5 pr-5 justify-end border-b-2 border-solid border-white' onClick={openModal1}>
-						<InfoOutlinedIcon />
+					<div className='text-white flex pb-4 pr-5 justify-end border-b-2 border-solid border-white ' >
+						<span className='cursor-pointer'><InfoOutlinedIcon  onClick={openModal1}/></span> 
 					</div>
 					<div>
 						{isModalOpen1 && (
 							<Modal
 								titleModal={'Detalhes da função (PRODESAN)'}
-								contentModal={`Atualmente estagiando na PRODESAN, trabalho como desenvolvedor fazendo manutenção em sistemas que utilizam PHP e Java. Também proponho soluções
-			  						com tecnologias mais modernas,(React e Node, minha especialidade) tentando propor uma renovação e facilidade nas futuras manutenções. `}
+								contentModal={`Um novo desafio foi aceito na migração do estágio. O trabalho como desenvolvedor vem se intensificando, e transita desde a  manutenção em sistemas que utilizam PHP e Java, até propostas com soluções baseadas em tecnologias mais modernas, como React e Node (nas quais busco me  especializar) sempre com o intuito de propor uma renovação sistêmica que proporcione facilidade nas futuras manutenções.
+								O trabalho vem instigando a busca pelo conhecimento que reverbera no instinto natural de colocá-lo a prova!  
+								Circulo propulsor que faz com que me apresente um melhor profissional a cada dia!`}
 								isOpen={isModalOpen1}
 								closeModal={closeModal1}
 							/>
@@ -149,18 +147,17 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
 						</div>
 					</div>
 
-					<div className='flex pb-5 pr-5 justify-end' onClick={openModal2} >
-						<InfoOutlinedIcon />
+					<div className='flex pb-6 pr-5 justify-end' >					
+						<span className='cursor-pointer'><InfoOutlinedIcon onClick={openModal2}/></span>
 					</div>
 				</div>
 
 				{isModalOpen2 && (
 					<Modal
 						titleModal={'Detalhes da função (RODRIMAR)'}
-						contentModal={`Na rodrimar, fui contratado como estagiário de TI, fazia trocas de toners de impressora, suporte ao usuário
-							  e limpeza e manutenção de computadores. Porém a impresa tinha uma demanda, que me vi em condições de cumprir.
-		 					 \nBasicamente era um sistema de controle de carga granel (Operação Granel).
-		   						Daí surgiu a oportunidade de crescimento como desenvolvedor, no mercado de trabalho.`}
+						contentModal={`Contrato de estágio de TI inicialmente voltado para infra. Na  RODRIMAR era compartilhado com um outro estagiário a responsabilidade pelo suporte aos usuários ( empresa com mais de 100 funcionários ) , limpeza e manutenção de computadores, além de realizar trocas e recargas de toners das impressoras. A organização do acervo de hardwares da empresa também era compreendida como parte das tarefas realizadas.
+						Diante de uma antiga demanda da empresa, surgiu a oportunidade de galgar espaço como desenvolvedor. Basicamente a necessidade de controle de armazenagem e transporte de grãos originou essa possibilidade. Por se tratar de um sistema de controle de carga granel (Operação Granel), que se apresentava com complexidade compatível com os conhecimentos e habilidades que já eram desempenhadas de forma teórica, tornando a decisão 
+						(de abraçar o desafio e desenvolver o projeto) a mais acertada! `}
 						isOpen={isModalOpen2}
 						closeModal={closeModal2}
 					/>

@@ -15,11 +15,20 @@ export default function Home() {
   return (
     <>
       <div className="overflow-y-auto scrollbar scrollbar-corner-rounded-full scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-w-2 hover:scrollbar-thumb-sky-900 scrollbar-thumb-cardContent scrollbar-track-lineCard overflow-x-hidden h-full w-full  text-white">
+
         <Navbar />
-        <SobreMim />
-        <Projetos />
-        <Experiencia />
-        <Contato />
+        <section className="SobreSection">
+          <SobreMim />
+        </section>
+        <section className="ProjetosSection">
+          <Projetos />
+        </section>
+        <section id="ExperiênciaSection">
+          <Experiencia />
+        </section>
+        <section id="ContatoSection">
+          <Contato />
+        </section>
 
         {/*<GraficoBarra/>   x
  <GraficoPizza/>*/}

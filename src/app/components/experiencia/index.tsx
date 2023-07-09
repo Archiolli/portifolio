@@ -5,7 +5,7 @@ import Container from "../container";
 const Experiencia = () => {
 
     return (
-        <>
+        <section id="ExperiênciaSection">
             <Container>
                 <div className="flex justify-between w-full h-screen items-center px-24">
 
@@ -22,12 +22,14 @@ const Experiencia = () => {
                         <CardSobreMim
                             title="Formações academicas"
                             content={' '}
-                            asFormacoes={true}  />
+                            asFormacoes={true} />
                     </div>
                 </div>
 
             </Container>
-        </>
+        </section>
+
+
     )
 }
 export default Experiencia;

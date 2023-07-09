@@ -6,7 +6,7 @@ import Container from "../container";
 const Projetos = () => {
 
     return (
-        <>
+        <section id="ProjetosSection">
             <Container>
                 <div className="items-center h-full flex flex-wrap px-20">
                     <div className="grow basis-72 p-5">
@@ -34,9 +34,9 @@ const Projetos = () => {
 
                     </div>
 
-                
 
-                
+
+
                     <div className="grow basis-72 p-5">
                         <CardSobreMim
                             title="Login"
@@ -65,7 +65,9 @@ const Projetos = () => {
                 </div>
 
             </Container>
-        </>
+        </section>
+
+
     )
 }
 export default Projetos;
