@@ -11,17 +11,20 @@ const Projetos = () => {
                 <div className="items-center h-full flex flex-wrap px-20">
                     <div className="grow basis-72 p-5">
                         <CardSobreMim
+                        
                             title="Operação Granel"
-                            content={`img Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos repellat voluptatum, totam reiciendis nihil earum ducimus illum sequi hic tenetur similique odio, rerum dolorem suscipit, error quae doloribus porro.`}
+                            content={' '}
                             isAmount={false}
+                            asProjetoOpGranel={true}
                         />
                     </div>
 
                     <div className="grow basis-72 p-5">
                         <CardSobreMim
                             title="Pets"
-                            content={`img Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos repellat voluptatum, totam reiciendis nihil earum ducimus illum sequi hic tenetur similique odio, rerum dolorem suscipit, error quae doloribus porro.`}
+                            content={` `}
                             isAmount={false}
+                            asPetProject={true}
                         />
                     </div>
 
@@ -48,16 +51,18 @@ const Projetos = () => {
                     <div className="grow basis-72 p-5">
                         <CardSobreMim
                             title="Banco"
-                            content={`img Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos repellat voluptatum, totam reiciendis nihil earum ducimus illum sequi hic tenetur similique odio, rerum dolorem suscipit, error quae doloribus porro.`}
+                            content={` `}
                             isAmount={false}
+                            asBancoProject={true}
                         />
                     </div>
 
                     <div className="grow basis-72 p-5">
                         <CardSobreMim
                             title="TodoList"
-                            content={`img Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos repellat voluptatum, totam reiciendis nihil earum ducimus illum sequi hic tenetur similique odio, rerum dolorem suscipit, error quae doloribus porro.`}
+                            content={` `}
                             isAmount={false}
+                            asTodoProject={true}
                         />
 
                     </div>

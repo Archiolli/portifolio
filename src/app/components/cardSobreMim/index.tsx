@@ -8,18 +8,34 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Modal from '../modal';
-import { log } from 'console';
-import { promises } from 'fs';
-const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalContent, hasInput, hasOverflow, asExperiencia, asFormacoes }: {
+import rodrigif from '../../utils/gifs/videoOpGranel.gif';
+import todoGif from "../../utils/gifs/giftodoapp.gif";
+import petGif from "../../utils/gifs/gifPets.gif";
+import bancoGif from "../../utils/gifs/gifBanco.gif";
+import Image from 'next/image';
+
+const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalContent, hasInput, asExperiencia, asFormacoes, 
+	asProjetoOpGranel,
+	asPetProject, 
+	asGraficoProject, 	
+	asBancoProject, 
+	asLoginProject, 
+	asTodoProject
+}: {
 	content?: any;
 	title: string;
 	isAmount?: boolean;
 	adicionalTitle?: string;
 	adicionalContent?: string;
 	hasInput?: boolean;
-	hasOverflow?: boolean;
+	asProjetoOpGranel?: boolean;
 	asExperiencia?: boolean;
 	asFormacoes?: boolean;
+	asPetProject?: boolean 
+	asGraficoProject?: boolean 	
+	asBancoProject?: boolean
+	asLoginProject?: boolean
+	asTodoProject?: boolean
 
 }) => {
 
@@ -28,11 +44,12 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
 	const emailInputRef = useRef<HTMLInputElement>(null);
 
 	///controle de estados (Cards diversos)
-	const [form, setForm] = useState<object>()
 	const [adicionalInput, setadicionalInput] = useState(hasInput || false)
 	const [amount, setAmount] = useState(isAmount || false);
 	const [experiencia, setExperiencia] = useState(asExperiencia || false)
 	const [formacoes, setFormacoes] = useState(asFormacoes || false)
+	const [asProjetoOpGranell, setProjetos] = useState(asProjetoOpGranel || false)
+
 
 	///controle de modais
 	const [isModalOpen1, setIsModalOpen1] = useState(false);
@@ -91,20 +108,20 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
 						<input name='name' type='text'
 							ref={nomeInputRef}
 							className='w-full px-2 h-12 border-solid border-2 text-white bg-inputColor bg-opacity-40 border-slate-400 rounded-md'
-						
+
 							placeholder='Digite seu nome...' /></div>
 					<div>
 						<label className='text-white' htmlFor="email">Email:</label>
 						<input name='email' type='email'
 							ref={emailInputRef}
 							className='w-full px-2 h-12 border-solid border-2 text-white bg-inputColor bg-opacity-40 border-slate-400 rounded-md'
-							
+
 							placeholder='Digite seu email...' /></div>
 					<div className='w-full'>
 						<label className='text-white' htmlFor="sugestoes">Sugestões:</label>
 						<textarea name='sugestoes'
 							ref={sugestoesInputRef}
-							className='w-full px-2 pt-2 h-36 border-solid border-2 text-white bg-inputColor bg-opacity-40 border-slate-400 rounded-md'							
+							className='w-full px-2 pt-2 h-36 border-solid border-2 text-white bg-inputColor bg-opacity-40 border-slate-400 rounded-md'
 							placeholder='Digite sua sugestão, elogio, ou qualquer outra coisa...' />
 					</div>
 					<div className="w-full h-14 flex items-center justify-center">
@@ -125,7 +142,7 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
 						<div className='flex justify-center items-center  w-3/4 h-28 text-center text-white'>PRODESAN – Progresso e Desenvolvimento de Santos</div>
 					</div>
 					<div className='text-white flex pb-4 pr-5 justify-end border-b-2 border-solid border-white ' >
-						<span className='cursor-pointer'><InfoOutlinedIcon  onClick={openModal1}/></span> 
+						<span className='cursor-pointer'><InfoOutlinedIcon onClick={openModal1} /></span>
 					</div>
 					<div>
 						{isModalOpen1 && (
@@ -147,8 +164,8 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
 						</div>
 					</div>
 
-					<div className='flex pb-6 pr-5 justify-end' >					
-						<span className='cursor-pointer'><InfoOutlinedIcon onClick={openModal2}/></span>
+					<div className='flex pb-6 pr-5 justify-end' >
+						<span className='cursor-pointer'><InfoOutlinedIcon onClick={openModal2} /></span>
 					</div>
 				</div>
 
@@ -252,8 +269,26 @@ const CardSobreMim = ({ content, title, isAmount, adicionalTitle, adicionalConte
 				</>
 			)}
 
-
-
+			{asProjetoOpGranell && (					
+					<div className="h-40 w-full px-5 pb-5">
+						<Image src={rodrigif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+					</div>
+			)}
+			{asTodoProject && (
+				<div className="h-40 w-full px-5 pb-5">
+				<Image src={todoGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+			</div>
+			)}
+			{asPetProject &&(
+				<div className="h-40 w-full px-5 pb-5">
+				<Image src={petGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+			</div>
+			)}
+			{asBancoProject && (
+				<div className="h-40 w-full px-5 pb-5">
+				<Image src={bancoGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+			</div>
+			)}
 
 		</div>
 	);

@@ -1,10 +1,7 @@
 import "./globals.css";
 import { Saira } from "next/font/google";
 
-const inter = Saira({
- // weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
+const inter = Saira({ subsets: ["latin"]});
 
 export const metadata = {
   title: "Portifólio João Archiolli",
@@ -20,7 +17,7 @@ export default function RootLayout({
 
 
   return (
-    <html lang="pt-BR" className="scroll-smooth" >
+    <html lang="pt-BR" className="scroll-smooth hover:scroll-smooth" >
       <body
         className={`${inter.className} h-full w-full overflow-y-hidden`}
       >

@@ -31,7 +31,7 @@ export default function Navbar() {
     <>
       <div>
         <div
-          className={`px-32 text-white w-screen flex justify-around items-center bg-navzin h-16`}
+          className={`px-32 text-white w-screen flex justify-around items-center  bg-navzin h-16`}
         >
           <div className={`${StancilOne.className} items-center text-3xl`}>
             João Archiolli
@@ -43,7 +43,7 @@ export default function Navbar() {
                   key={''}
                   className="flex items-center justify-around list-none "
                 >
-                  <a className="ml-16 hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4" 
+                  <a className="ml-16 hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer rounded-full p-4" 
 				             href={`#${i+1}`}>
                     <button >{nav}</button>
                   </a>
@@ -56,3 +56,4 @@ export default function Navbar() {
     </>
   );
 }
+

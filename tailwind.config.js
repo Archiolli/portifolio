@@ -15,7 +15,8 @@ module.exports = {
         'logoUnisanta': "url('../app/utils/img/logoUnisanta.png')",
         'logoDiome': "url('../app/utils/img/logoDiome.png')",
         'logoCursoEmVideo': "url('../app/utils/img/cursoEmVideoLogo.png')" ,
-        'logoOBTC': "url('../app/utils/img/OBTClogo.jpg')"
+        'logoOBTC': "url('../app/utils/img/OBTClogo.jpg')",
+        'gifRodrimar': "url('../app/utils/gifs/videoOpGranel.gif')"
       }),
       colors: {
         'navzin': 'rgba(47, 57, 94, 0.49)',

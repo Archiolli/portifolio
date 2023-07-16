@@ -9,7 +9,7 @@ export default function Contato() {
             <Container>
                 <div className='h-screen w-full items-center flex justify-center'>
 
-                    <div className=" lg:px-20 sm:px-10">
+                    <div className=" lg:px-20 sm:px-10  mb-10">
 
                         <div className="w-full">
                             <CardSobreMim
@@ -28,3 +28,5 @@ export default function Contato() {
         </section>
     )
 }
+
+
