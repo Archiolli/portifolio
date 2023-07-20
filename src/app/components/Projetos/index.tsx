@@ -1,73 +1,57 @@
 
 'use client'
+import { useState } from "react";
 import CardSobreMim from "../cardSobreMim";
 import Container from "../container";
+import Image from "next/image";
+import Modal from '../modal';
+import rodrigif from '../../utils/gifs/videoOpGranel.gif';
+import todoGif from "../../utils/gifs/giftodoapp.gif";
+import petGif from "../../utils/gifs/gifPets.gif";
+import bancoGif from "../../utils/gifs/gifBanco.gif";
 
 const Projetos = () => {
+
 
     return (
         <section id="ProjetosSection">
             <Container>
-                <div className="items-center h-full flex flex-wrap px-20">
-                    <div className="grow basis-72 p-5">
-                        <CardSobreMim
-                        
-                            title="Operação Granel"
-                            content={' '}
-                            isAmount={false}
-                            asProjetoOpGranel={true}
-                        />
-                    </div>
 
-                    <div className="grow basis-72 p-5">
-                        <CardSobreMim
-                            title="Pets"
-                            content={` `}
-                            isAmount={false}
-                            asPetProject={true}
-                        />
-                    </div>
+                <div className="flex justify-between">
+                    
+                        <CardSobreMim titleCard={"Operação Granel"}>
+                            <div className="h-40 w-full">
+                                <Image src={rodrigif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+                            </div>
+                        </CardSobreMim>
+                    
+                    
+                        <CardSobreMim titleCard="Pets">
+                            <div className="h-40 w-full">
+                                <Image src={petGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+                            </div>
+                        </CardSobreMim>
+                    
 
-                    <div className="grow basis-72 p-5">
-                        <CardSobreMim
-                            title="Gráficos Crypto"
-                            content={`img Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos repellat voluptatum, totam reiciendis nihil earum ducimus illum sequi hic tenetur similique odio, rerum dolorem suscipit, error quae doloribus porro.`}
-                            isAmount={false}
-                        />
-
-                    </div>
-
-
-
-
-                    <div className="grow basis-72 p-5">
-                        <CardSobreMim
-                            title="Login"
-                            content={`img Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos repellat voluptatum, totam reiciendis nihil earum ducimus illum sequi hic tenetur similique odio, rerum dolorem suscipit, error quae doloribus porro.`}
-                            isAmount={false}
-                        />
-                    </div>
-
-                    <div className="grow basis-72 p-5">
-                        <CardSobreMim
-                            title="Banco"
-                            content={` `}
-                            isAmount={false}
-                            asBancoProject={true}
-                        />
-                    </div>
-
-                    <div className="grow basis-72 p-5">
-                        <CardSobreMim
-                            title="TodoList"
-                            content={` `}
-                            isAmount={false}
-                            asTodoProject={true}
-                        />
-
-                    </div>
-
+                    
+                        <CardSobreMim titleCard='Todo App'>
+                            <div className="h-40 w-full">
+                                <Image src={todoGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+                            </div>
+                        </CardSobreMim>
                 </div>
+
+
+
+                <div className="justify-center w-full flex">
+                    <CardSobreMim titleCard='Banco'>
+                        <div className="h-40 w-full">
+                            <Image src={bancoGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+                        </div>
+                    </CardSobreMim>
+                </div>
+
+
 
             </Container>
         </section>

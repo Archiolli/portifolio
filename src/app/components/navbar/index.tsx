@@ -1,5 +1,7 @@
 "use client";
 import { Saira_Stencil_One } from "next/font/google";
+import { useState } from "react";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const StancilOne = Saira_Stencil_One({
   weight: ["400"],
@@ -7,52 +9,121 @@ const StancilOne = Saira_Stencil_One({
 });
 
 export default function Navbar() {
-  const navLinks = ["Sobre mim", "Projetos", "Experiência", "Contato"];
 
-  const renderNavLink = (content: any) => {
-    const scrollToId = `${content.toLowerCase()}Section`;
 
-    const handleClickNav = () => {
-      document.getElementById(scrollToId)?.scrollIntoView({
-        behavior: "smooth",
-      });
-    };
+  const [menuAberto, setMenuAberto] = useState(false);
+  const [activeSection, setActiveSection] = useState<number>(1);
 
-    return (
-      <ul key={content} className="flex items-center justify-around list-none ">
-        <li className="ml-16 hover:bg-mouseHoverNav transition-colors duration-500 cursor-pointer rounded-full p-4">
-          <button onClick={handleClickNav}>{content}</button>
-        </li>
-      </ul>
-    );
-  }
-
+  const handleSetActiveSection = (sectionNumber: number) => {
+    setActiveSection(sectionNumber);
+    setMenuAberto(false);
+  };
   return (
     <>
-      <div>
-        <div
-          className={`px-32 text-white w-screen flex justify-around items-center  bg-navzin h-16`}
-        >
-          <div className={`${StancilOne.className} items-center text-3xl`}>
+      <div className={`px-24 text-white w-full flex justify-between items-center bg-navzin h-16`}>
+        <a  href={`#${1}`}  onClick={() => handleSetActiveSection(1)}>
+          <div className={`${StancilOne.className} items-center ml-10 flex-nowrap text-3xl`}>
             João Archiolli
           </div>
-          <nav className="flex justify-around list-none">
-            {navLinks.map((nav, i) => {
-              return (
-                <ul
-                  key={''}
-                  className="flex items-center justify-around list-none "
-                >
-                  <a className="ml-16 hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer rounded-full p-4" 
-				             href={`#${i+1}`}>
-                    <button >{nav}</button>
-                  </a>
-                </ul>
-              );
-            })}
-          </nav>
-        </div>
+        </a>
+        <nav className="flex justify-around list-none">
+          <ul className="items-center justify-around list-none hidden xl:flex">
+            <a
+              href={`#${1}`}
+              className={`ml-16 hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer rounded-full p-4 ${activeSection === 1 ? "bg-mouseHoverNav" : ""}`}
+              onClick={() => handleSetActiveSection(1)}
+            >
+              Sobre mim
+            </a>
+            <a
+              href={`#${2}`}
+              className={`ml-16 hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer rounded-full p-4 ${activeSection === 2 ? "bg-mouseHoverNav" : ""}`}
+              onClick={() => handleSetActiveSection(2)}
+            >
+              Projetos
+            </a>
+            <a
+              href={`#${3}`}
+              className={`ml-16 hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer rounded-full p-4 ${activeSection === 3 ? "bg-mouseHoverNav" : ""}`}
+              onClick={() => handleSetActiveSection(3)}
+            >
+              Experiência
+            </a>
+            <a
+              href={`#${4}`}
+              className={`ml-16 hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer rounded-full p-4 ${activeSection === 4 ? "bg-mouseHoverNav" : ""}`}
+              onClick={() => handleSetActiveSection(4)}
+            >
+              Contato
+            </a>
+          </ul>
+
+
+          <div className="flex justify-end xl:hidden">
+
+            {menuAberto ? (
+
+              // Renderize o menu inferior aqui
+              <div className="w-full h-[calc(100vh-64px)] fixed top-16 left-0 bg-navzin">
+                <div className="flex-col items-center justify-center">
+                  <div className="justify-end flex w-full pr-20">
+                    <button
+                      className="text-white cursor-pointer transition-colors duration-500 rounded-full p-4 mt-4"
+                      onClick={() => setMenuAberto(false)}
+                    >
+                      X
+                    </button>
+                  </div>
+                  <div className="flex w-full justify-center text-center border-b border-white z-20" >
+                    <a
+                      href={`#${1}`}
+                      className={`w-full text-white hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer p-4 ${activeSection === 1 ? "bg-mouseHoverNav" : ""}`}
+                      onClick={() => handleSetActiveSection(1)}
+                    >
+                      Sobre mim
+                    </a>
+                  </div>
+                  <div className="flex w-full justify-center text-center border-b border-white z-20" >
+                    <a
+                      href={`#${2}`}
+                      className={`w-full text-white hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer p-4 ${activeSection === 2 ? "bg-mouseHoverNav" : ""}`}
+                      onClick={() => handleSetActiveSection(2)}
+                    >
+                      Projetos
+                    </a>
+                  </div>
+                  <div className="flex w-full justify-center text-center border-b border-white z-20" >
+                    <a
+                      href={`#${3}`}
+                      className={`w-full text-white hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer p-4 ${activeSection === 3 ? "bg-mouseHoverNav" : ""}`}
+                      onClick={() => handleSetActiveSection(3)}
+                    >
+                      Experiência
+                    </a>
+                  </div>
+                  <div className="flex w-full justify-center text-center border-b border-white z-20" >
+                    <a
+                      href={`#${4}`}
+                      className={`w-full text-white hover:bg-mouseHoverNav scroll-smooth transition-colors duration-500 cursor-pointer p-4 ${activeSection === 4 ? "bg-mouseHoverNav" : ""}`}
+                      onClick={() => handleSetActiveSection(4)}
+                    >
+                      Contato
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            ) : (
+              <div className="cursor-pointer">
+                <MenuIcon fontSize="medium" onClick={() => setMenuAberto(true)} />
+              </div>
+            )}
+          </div>
+        </nav>
       </div>
+
+
+
     </>
   );
 }
