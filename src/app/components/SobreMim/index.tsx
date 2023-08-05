@@ -6,10 +6,8 @@ const SobreMim = () => {
 
   return (
     <>
-      <section id="SobreSection">
+    
         <Container>
-          <div className="flex flex-wrap justify-center items-center h-screen">
-
             <div className="px-32 pb-4 grow basis-56 text-center items-center">
               <CardSobreMim titleCard={<Image src={perfil} alt="Descrição do GIF" className="w-full h-full ml-6 justify-center items-center rounded-full" />}>
               <div className="text-xl mb-3 font-normal text-white"> Competência e tecnologias</div>               
@@ -42,10 +40,8 @@ const SobreMim = () => {
               </CardSobreMim>
             </div>
 
-
-          </div>
         </Container>
-      </section>
+  
 
 
 

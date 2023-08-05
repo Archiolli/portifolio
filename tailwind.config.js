@@ -31,4 +31,10 @@ module.exports = {
     require('tailwind-scrollbar'),
     require('tailwind-scrollbar')({ nocompatible: true })
   ],
+  screens: {
+    sm: '550px',
+    md: '768px',
+    lg: '976px',
+    xl: '1440px',
+  },
 }

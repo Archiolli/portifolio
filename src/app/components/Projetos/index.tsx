@@ -14,47 +14,38 @@ const Projetos = () => {
 
 
     return (
-        <section id="ProjetosSection">
             <Container>
+                
+                <div className="border-2 border-solid border-red-600">
+                    <CardSobreMim titleCard={"Operação Granel"}>
+                        <div className="h-40 w-full">
+                            <Image src={rodrigif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+                        </div>
+                    </CardSobreMim>
 
-                <div className="flex justify-between">
-                    
-                        <CardSobreMim titleCard={"Operação Granel"}>
-                            <div className="h-40 w-full">
-                                <Image src={rodrigif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
-                            </div>
-                        </CardSobreMim>
-                    
-                    
-                        <CardSobreMim titleCard="Pets">
-                            <div className="h-40 w-full">
-                                <Image src={petGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
-                            </div>
-                        </CardSobreMim>
-                    
 
-                    
-                        <CardSobreMim titleCard='Todo App'>
-                            <div className="h-40 w-full">
-                                <Image src={todoGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
-                            </div>
-                        </CardSobreMim>
+                    <CardSobreMim titleCard="Pets">
+                        <div className="h-40 w-full">
+                            <Image src={petGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+                        </div>
+                    </CardSobreMim>
                 </div>
+                <div className="border-2 border-solid border-red-600">
 
 
-
-                <div className="justify-center w-full flex">
+                    <CardSobreMim titleCard='Todo App'>
+                        <div className="h-40 w-full">
+                            <Image src={todoGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
+                        </div>
+                    </CardSobreMim>
                     <CardSobreMim titleCard='Banco'>
                         <div className="h-40 w-full">
                             <Image src={bancoGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
                         </div>
                     </CardSobreMim>
+
                 </div>
-
-
-
             </Container>
-        </section>
 
 
     )

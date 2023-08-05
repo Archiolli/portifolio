@@ -20,7 +20,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className={`px-24 text-white w-full flex justify-between items-center bg-navzin h-16`}>
+      <div className={`px-10 2xl:px-44 lg:px-40 md:px-20 sm:px-10 text-white w-full flex justify-between items-center bg-navzin h-16`}>
         <a  href={`#${1}`}  onClick={() => handleSetActiveSection(1)}>
           <div className={`${StancilOne.className} items-center ml-10 flex-nowrap text-3xl`}>
             João Archiolli

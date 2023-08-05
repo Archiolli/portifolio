@@ -28,40 +28,41 @@ const Experiencia = () => {
     const [isModalOpen2, setIsModalOpen2] = useState(false);
 
     return (
-        <section id="ExperiênciaSection">
             <Container>
-                <div className="flex justify-between flex-wrap w-full h-screen items-center px-24">
-                    <div className="w-full pr-5 grow basis-72 p-5">
+               
+                    <div className="w-full max-md:mt-20">
                         <CardSobreMim titleCard={"Experiência profissional"}>
-                            <div className='max-h-96'>
-                                <div className="flex justify-between px-10 w-full py-3">
-                                    <div className="rounded-full h-28 w-28 bg-logoProdesan bg-cover  bg-center bg-no-repeat pr-28"></div>
+                            <div className='max-h-72 h-full'>
+                                <div className="flex justify-between px-10 w-full -mb-2">
+                                    <div className="rounded-full h-28 w-28 bg-logoProdesan bg-cover bg-center bg-no-repeat"></div>
                                     <div className='flex justify-center items-center  w-3/4 h-28 text-center text-white'>PRODESAN – Progresso e Desenvolvimento de Santos</div>
                                 </div>
-                                <div className='text-white flex pb-4 pr-5 justify-end border-b-2 border-solid border-white ' >
+                                <div className='text-white flex pr-5 justify-end border-b-2 border-solid pb-1 border-white ' >
                                     <span className='cursor-pointer'><InfoOutlinedIcon onClick={openModal1} /></span>
                                 </div>
+
+
                                 <div>
                                     {isModalOpen1 && (
                                         <Modal
                                             titleModal={'Detalhes da função (PRODESAN)'}
                                             contentModal={`Um novo desafio foi aceito na migração do estágio. O trabalho como desenvolvedor vem se intensificando, e transita desde a  manutenção em sistemas que utilizam PHP e Java, até propostas com soluções baseadas em tecnologias mais modernas, como React e Node (nas quais busco me  especializar) sempre com o intuito de propor uma renovação sistêmica que proporcione facilidade nas futuras manutenções.
-								O trabalho vem instigando a busca pelo conhecimento que reverbera no instinto natural de colocá-lo a prova!  
-								Circulo propulsor que faz com que me apresente um melhor profissional a cada dia!`}
+								             O trabalho vem instigando a busca pelo conhecimento que reverbera no instinto natural de colocá-lo a prova!  
+								              Circulo propulsor que faz com que me apresente um melhor profissional a cada dia!`}
                                             isOpen={isModalOpen1}
                                             closeModal={closeModal1}
                                         />
                                     )}
                                 </div>
 
-                                <div className="flex justify-between w-full px-10 mt-6 py-4">
+                                <div className="flex justify-between w-full px-10 mt-6 -mb-2">
                                     <div className="rounded-full h-28 w-28 bg-logoRodrimar bg-center bg-cover bg-no-repeat "></div>
                                     <div className='flex justify-center items-center w-3/4 h-28 text-center text-white'>
                                         RODRIMAR S/A - TERMINAIS PORTUÁRIOS E ARM. GERAIS
                                     </div>
                                 </div>
 
-                                <div className='flex pb-6 pr-5 justify-end' >
+                                <div className='flex pr-5 justify-end' >
                                     <span className='cursor-pointer'><InfoOutlinedIcon onClick={openModal2} /></span>
                                 </div>
                             </div>
@@ -80,10 +81,10 @@ const Experiencia = () => {
 
                         </CardSobreMim>
                     </div>
-                    <div className="w-full pl-5 grow basis-72 p-5">
+                    <div className="w-full max-md:mt-20">
                         <CardSobreMim titleCard={"Formações academicas"}>
                             <div className='overflow-y-auto scrollbar scrollbar-corner-rounded-full scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-w-2 hover:scrollbar-thumb-sky-900 scrollbar-thumb-cardContent scrollbar-track-lineCard'>
-                                <div className='max-h-96  pr-1'>
+                                <div className='max-h-72  pr-1'>
                                     <a href="https://unisanta.apprbs.com.br/sistemas-de-informacao/" target='_blank'>
                                         <div className='flex justify-between px-10 w-full hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer py-5 items-center border-b-2 border-solid border-white'>
                                             <div className='bg-logoUnisanta bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
@@ -158,11 +159,8 @@ const Experiencia = () => {
                         </CardSobreMim>
                     </div>
 
-                </div>
-
 
             </Container>
-        </section>
 
 
     )

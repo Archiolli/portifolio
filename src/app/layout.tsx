@@ -1,3 +1,4 @@
+import Navbar from "./components/navbar";
 import "./globals.css";
 import { Saira } from "next/font/google";
 
@@ -19,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth hover:scroll-smooth" >
       <body
-        className={`${inter.className} h-full w-full overflow-y-hidden`}
+        className={`${inter.className} flex flex-col h-screen w-full overflow-y-hidden`}
       >
         <>
-          <div className="bg-image bg-scroll bg-no-repeat bg-cover bg-center h-full w-full fixed">
+          <div className="bg-image grow bg-scroll bg-no-repeat bg-cover bg-center h-screen w-screen fixed">
             {children}
           </div>
         </>
