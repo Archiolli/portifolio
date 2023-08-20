@@ -1,14 +1,17 @@
 'use client'
 import { Dialog, Transition } from '@headlessui/react'
-import { useState, Fragment, useEffect } from 'react';
+import { useState, Fragment, useEffect, ReactNode } from 'react';
+import { Statement } from 'typescript';
 
+interface iCard {
+    isOpen: boolean;
+    closeModal: () => void;
+	titleModal: ReactNode | string;
+    contentModal: ReactNode | string;
+    
+}
 
-const Modal = ({ isOpen, closeModal, titleModal, contentModal }: {
-    isOpen: any,
-    closeModal: any,
-    titleModal?: String,
-    contentModal: String
-}) => {
+const Modal = ({ isOpen, closeModal, titleModal, contentModal }: iCard ) => {
 
     const openModal = () => {
         openModal();
@@ -18,7 +21,7 @@ const Modal = ({ isOpen, closeModal, titleModal, contentModal }: {
         setContent(contentModal);
     }, [contentModal])
 
-    const [content, setContent] = useState<String>('')
+    const [content, setContent] = useState<any>('')
 
     return (
         <Transition appear show={isOpen} as={Fragment}>

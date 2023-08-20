@@ -16,14 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
-
+//flex flex-col h-screen w-full
   return (
-    <html lang="pt-BR" className="scroll-smooth hover:scroll-smooth" >
+    <html lang="pt-BR">
       <body
-        className={`${inter.className} flex flex-col h-screen w-full overflow-y-hidden`}
+        className={`${inter.className}  overflow-y-hidden`}
       >
         <>
-          <div className="bg-image grow bg-scroll bg-no-repeat bg-cover bg-center h-screen w-screen fixed">
+          <div className="bg-image bg-scroll bg-no-repeat bg-cover bg-center h-screen w-screen fixed">
             {children}
           </div>
         </>

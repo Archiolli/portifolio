@@ -17,7 +17,7 @@ export default function Contato() {
 
     return (
         <Container>
-            <div className="md:px-60  lg:px-96 w-full h-full">
+            <div className="lg:px-64 xl:px-60 md:px-32 2xl:px-32 max-2xl:px-96 max-sm:px-0 sm:px-0 w-full h-full">
                 <CardSobreMim titleCard={"Entre em contato"}>
                     <div className="flex justify-around">
                         <span className='cursor-pointer'><a href="https://wa.me/5513998073586" target="_blank"><WhatsAppIcon /></a></span>

@@ -64,7 +64,7 @@ export default function Navbar() {
             {menuAberto ? (
 
               // Renderize o menu inferior aqui
-              <div className="w-full h-[calc(100vh-64px)] fixed top-16 left-0 bg-navzin">
+              <div className="w-full h-[calc(100vh-64px)] fixed top-16 left-0 bg-nav">
                 <div className="flex-col items-center justify-center">
                   <div className="justify-end flex w-full pr-20">
                     <button
@@ -121,9 +121,6 @@ export default function Navbar() {
           </div>
         </nav>
       </div>
-
-
-
     </>
   );
 }
