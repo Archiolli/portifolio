@@ -11,19 +11,17 @@ import Experiencia from "./components/experiencia";
 import initializeAOS from "./utils/aos/aos";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 export default function Home() {
 
 
-
-
   return (
+    
     <>
       <Navbar />
       <div className="flex flex-col scroll-smooth overflow-y-auto scrollbar scrollbar-corner-rounded-full scrollbar-thumb-rounded-full 
-      scrollbar-track-rounded-full scrollbar-w-2 hover:scrollbar-thumb-sky-900 scrollbar-thumb-cardContent
-       scrollbar-track-lineCard overflow-x-hidden h-full w-full  text-white">
-        <section id="1" className="flex md:flex-row flex-col w-full pt-20 max-sm:mb-60 max-md:mb-60 max-md:mt-10">
+      scrollbar-track-rounded-full scrollbar-w-2 sm:scrollbar-thumb-cardContent
+      sm:scrollbar-track-lineCard overflow-x-hidden h-full w-full  text-white">
+        <section  id="1" className="flex md:flex-row flex-col w-full pt-20 max-sm:mb-60 max-md:mb-60 max-md:mt-10">
           <SobreMim />
         </section>
         <section id="2"className="flex md:flex-row  md:mt-20 flex-col w-full">

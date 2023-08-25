@@ -2,7 +2,10 @@ import Image from "next/image";
 import CardSobreMim from "../cardSobreMim";
 import Container from "../container";
 import perfil from "../../utils/img/Perfil.jpg"
+
 const SobreMim = () => {
+  
+
 
   return (
     <>
@@ -11,7 +14,7 @@ const SobreMim = () => {
         <div className="sm:flex sm:flex-row max-lg:flex max-lg:flex-col lg:flex lg:flex-row 2xl:flex 2xl:flex-col
          max-md:px-0
         ">
-          <div className="w-full max-sm:pb-8 sm:pb-8 md:pb-8  text-center items-center px-20">
+          <div className="w-full max-sm:pb-8 sm:pb-8 md:pb-8  text-center items-center md:px-16 sm:px-20 2xl:px-[10%] ">
             <CardSobreMim titleCard={<div className="flex justify-center">
               <Image src={perfil} alt="Descrição do GIF" className="max-sm:h-32 max-sm:w-32 md:w-32 md:h-32  rounded-full" /></div>}
             >

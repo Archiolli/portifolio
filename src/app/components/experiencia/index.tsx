@@ -39,8 +39,6 @@ const Experiencia = () => {
                                 <div className="sm:flex sm:justify-around sm:h-full sm:items-center ">
                                     <Image src={prodesanImg} alt="Descrição do GIF" className="rounded-xl h-36 w-52 max-sm:w-full max-sm:h-full" />
                                     <div className="max-sm:flex max-sm:flex-col sm:flex sm:flex-col">
-
-
                                         <div className="w-full uppercase tracking-wide text-sm text-white
                                         font-semibold sm:px-5 text-center max-sm:pt-5"><span className="text-3xl
                                         flex justify-center text-center items-center ">PRODESAN</span> Progresso e Desenvolvimento de Santos
@@ -95,74 +93,74 @@ const Experiencia = () => {
 
                     </CardSobreMim>
                 </div>
-                <div className="w-full p-3 max-md:mt-20">
+                <div className="w-full sm:p-3 max-md:mt-20">
                     <CardSobreMim titleCard={"Formações academicas"}>
                         <div className='overflow-y-auto scrollbar scrollbar-corner-rounded-full scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-w-2 hover:scrollbar-thumb-sky-900 scrollbar-thumb-cardContent scrollbar-track-lineCard'>
                             <div className='max-h-80 pr-1'>
                                 <a href="https://unisanta.apprbs.com.br/sistemas-de-informacao/" target='_blank'>
-                                    <div className='flex justify-between px-10 w-full hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer py-5 items-center border-b-2 border-solid border-white'>
+                                    <div className='flex justify-between sm:px-10 w-full hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer py-5 items-center border-b-2 border-solid border-white'>
                                         <div className='bg-logoUnisanta bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                         <div className='flex justify-center w-4/5 flex-wrap text-center'>Universidade santa cecília<div className='text-center flex justify-center w-full'>Sistemas de informação (cursando até 12/2025)</div></div>
                                     </div>
                                 </a>
 
                                 <a href="https://pro.onebitcode.com/?utm_campaign=OBC-C+|+E0-UNC+|+CAR+|+SCH+|+T1S-BRD+|+CPA+|+BR+|+2022-11-10+|+FULL+STACK+|+Branding&utm_content=onebitcode&utm_term=00+|+SCH+|+Keywords+|++Branding&&utm_medium=paid-traffic&utm_source=g&ltk_gcm=20126792132&ltk_gag=155881055264&ltk_gac=658337982717&ltk_gne=g&gad=1&gclid=Cj0KCQjw756lBhDMARIsAEI0AgkLHRdmRT_ppb9JPzvg1hJZrEc9VTlZpHLZIJGZynqG3euBS4K6md8aAi3AEALw_wcB" target='_blank'>
-                                    <div className='flex justify-between px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center  border-b-2 border-solid border-white'>
+                                    <div className='flex justify-between sm:px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center  border-b-2 border-solid border-white'>
                                         <div className='bg-logoOBTC bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                         <div className='flex justify-center w-4/5 flex-wrap text-center'>HOTMART<div className='text-center flex justify-center w-full'>OneBitCode - Leonardo Scorza - Do Zero ao Profissional</div></div>
                                     </div>
                                 </a>
-                                <a href="https://www.dio.me/courses/trabalhando-com-componentes-em-react?search=componen" target='_blank'><div className='flex justify-between px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
+                                <a href="https://www.dio.me/courses/trabalhando-com-componentes-em-react?search=componen" target='_blank'><div className='flex justify-between sm:px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
                                     <div className='bg-logoDiome bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                     <div className='flex justify-center w-4/5 flex-wrap text-center'>DIO.ME<div className='text-center flex justify-center w-full'>Trabalhando com Componentes em React</div></div>
                                 </div>
                                 </a>
-                                <a href="https://www.cursoemvideo.com/curso/curso-de-algoritmo/" target='_blank'><div className='flex justify-between px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center  border-b-2 border-solid border-white'>
+                                <a href="https://www.cursoemvideo.com/curso/curso-de-algoritmo/" target='_blank'><div className='flex justify-between sm:px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center  border-b-2 border-solid border-white'>
                                     <div className='bg-logoCursoEmVideo bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                     <div className='flex justify-center w-4/5 flex-wrap text-center'>Curso em Vídeo<div className='text-center flex justify-center w-full'>Algoritimos</div></div>
                                 </div>
                                 </a>
-                                <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/" target='_blank'><div className='flex hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer justify-between px-10 w-full py-5 items-center  border-b-2 border-solid border-white'>
+                                <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/" target='_blank'><div className='flex hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer justify-between sm:px-10 w-full py-5 items-center  border-b-2 border-solid border-white'>
                                     <div className='bg-logoCursoEmVideo bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                     <div className='flex justify-center w-4/5 flex-wrap text-center'>Curso em Vídeo<div className='text-center flex justify-center w-full'>HTML5 E CSS3 (Módulo 1)</div></div>
                                 </div>
 
                                 </a>
-                                <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/" target='_blank'><div className='flex hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer justify-between px-10 w-full py-5 items-center  border-b-2 border-solid border-white'>
+                                <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/" target='_blank'><div className='flex hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer justify-between sm:px-10 w-full py-5 items-center  border-b-2 border-solid border-white'>
                                     <div className='bg-logoCursoEmVideo bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                     <div className='flex justify-center w-4/5 flex-wrap text-center'>Curso em Vídeo<div className='text-center flex justify-center w-full'>HTML5 E CSS3 (Módulo 2)</div></div>
                                 </div>
                                 </a>
-                                <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/" target='_blank'><div className='flex hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer justify-between px-10 w-full py-5 items-center  border-b-2 border-solid border-white'>
+                                <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/" target='_blank'><div className='flex hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer justify-between sm:px-10 w-full py-5 items-center  border-b-2 border-solid border-white'>
                                     <div className='bg-logoCursoEmVideo bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                     <div className='flex justify-center w-4/5 flex-wrap text-center'>Curso em Vídeo<div className='text-center flex justify-center w-full'>HTML5 E CSS3 (Módulo 3)</div></div>
                                 </div>
                                 </a>
                                 <a href="https://www.udemy.com/course/nodejs-do-zero-a-maestria-com-diversos-projetos/?utm_source=adwords-intl&utm_medium=udemyads&utm_campaign=WebDevelopment_new_v.PROF_la.PT_cc.BR_ti.8322&utm_content=deal4584&utm_term=_._ag_116454201523_._kw__._ad_492962435167_._de_c_._dm__._pl__._ti_dsa-1145036243504_._li_1001766_._pd__._&gclid=Cj0KCQjw756lBhDMARIsAEI0AgmXbiPREwIv-xVJm8OmAMqdrT9aL1CsSJlpSxFf3KOvi4mztXWMLpUaAhuLEALw_wcB" target='_blank'>
-                                    <div className='flex justify-between px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
+                                    <div className='flex justify-between sm:px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
                                         <div className='bg-logoUdemy bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                         <div className='flex justify-center w-4/5 flex-wrap text-center'>Udemy<div className='text-center flex justify-center w-full'>Node.js do Zero a Maestria com diversos Projetos</div></div>
                                     </div>
                                 </a>
-                                <a href="https://www.udemy.com/course/curso-web/" target='_blank'><div className='flex justify-between px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
+                                <a href="https://www.udemy.com/course/curso-web/" target='_blank'><div className='flex justify-between sm:px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
                                     <div className='bg-logoUdemy bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                     <div className='flex justify-center w-4/5 flex-wrap text-center'>Udemy<div className='text-center flex justify-center w-full'>Curso Web Moderno Completo com JavaScript 2022 + Projetos</div></div>
                                 </div>
                                 </a>
                                 <a href="https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/" target='_blank'>
-                                    <div className='flex justify-between px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
+                                    <div className='flex justify-between sm:px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
                                         <div className='bg-logoUdemy bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                         <div className='flex justify-center w-4/5 flex-wrap text-center'>Udemy<div className='text-center flex justify-center w-full'>C# Completo: Programação Orientada + Projetos</div></div>
                                     </div>
                                 </a>
                                 <a href="https://www.udemy.com/course/logica-de-programacao-csharp/" target='_blank'>
-                                    <div className='flex justify-between px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
+                                    <div className='flex justify-between sm:px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center border-b-2 border-solid border-white'>
                                         <div className='bg-logoUdemy bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                         <div className='flex justify-center w-4/5 flex-wrap text-center'>Udemy<div className='text-center flex justify-center w-full'>C# Primeiros Passos: Lógica de programação e Algorítimos</div></div>
                                     </div>
                                 </a>
                                 <a href="https://www.udemy.com/course/frccursodemanuntencao/" target='_blank'>
-                                    <div className='flex justify-between px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center'>
+                                    <div className='flex justify-between sm:px-10 w-full py-5 hover:bg-white hover:bg-opacity-5 transition-colors duration-300 cursor-pointer items-center'>
                                         <div className='bg-logoUdemy bg-cover bg-center rounded-full bg-no-repeat h-20 w-20'></div>
                                         <div className='flex justify-center w-4/5 flex-wrap text-center'>Udemy<div className='text-center flex justify-center w-full'>Manutenção De Computadores E Equipamentos De Informática</div></div>
                                     </div>
