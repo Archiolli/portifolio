@@ -2,8 +2,6 @@
 import { useState, useEffect, useRef } from "react";
 import SobreMim from "./components/SobreMim";
 import Navbar from "./components/navbar";
-import GraficoBarra from "./graficoDeBarras/page";
-import GraficoPizza from "./graficoDePizza/page";
 import CardSobreMim from "./components/cardSobreMim";
 import Projetos from "./components/Projetos";
 import Contato from "./components/contato";
