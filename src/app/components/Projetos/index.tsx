@@ -4,10 +4,10 @@ import { useState } from "react";
 import CardSobreMim from "../cardSobreMim";
 import Container from "../container";
 import Image from "next/image";
-import rodrigif from '../../utils/gifs/videoOpGranel.gif';
-import todoGif from "../../utils/gifs/giftodoapp.gif";
-import petGif from "../../utils/gifs/gifPets.gif";
-import ramalgif from "../../utils/gifs/gifRamais.gif";
+import rodrigif from '../../../../public/gifs/videoOpGranel.gif';
+import todoGif from "../../../../public/gifs/giftodoapp.gif";
+import petGif from "../../../../public/gifs/gifPets.gif";
+import ramalgif from "../../../../public/gifs/gifRamais.gif";
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Modal from "../modal";
 
