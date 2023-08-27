@@ -55,7 +55,7 @@ const SobreMim = () => {
             <CardSobreMim titleCard={'Sobre mim'}>
               <div>
                 <p>Desenvolvedor web full stack de 22 anos, ex-nadador medalhista de campeonatos nacionais e estaduais. Transitei da natação para a programação,
-                  canalizando disciplina e resiliência. Projetos como "Operação Granel" e "Ramais Inteligentes" refletem minha
+                  canalizando disciplina e resiliência. Projetos como Operação Granel e Ramais Inteligentes refletem minha
                   capacidade de solucionar problemas.
                   Comprometido em impactar positivamente através da programação. Em busca constante de aprendizado.
                 </p>
