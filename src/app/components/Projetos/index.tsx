@@ -43,7 +43,7 @@ const Projetos = () => {
 				</div>
 				<div className="md:flex md:justify-center md:w-full mb-10">
 					<div className="md:w-3/4 sm:w-full max-sm:w-full">
-						<CardSobreMim titleCard={<span className="flex justify-between">Operação Granel <span className='cursor-pointer'><InfoOutlinedIcon onClick={() => setIsModalOpen2(true)} /></span></span>}>
+						<CardSobreMim titleCard={<span className="flex justify-between">Pets <span className='cursor-pointer'><InfoOutlinedIcon onClick={() => setIsModalOpen2(true)} /></span></span>}>
 							<div className="md:h-1/5 md:w-full">
 								<Image src={petGif} alt="Descrição do GIF" className="w-full h-full rounded-xl" />
 							</div>
@@ -60,7 +60,7 @@ const Projetos = () => {
 						</CardSobreMim>
 					</div>
 				</div>
-				
+
 
 			</div>
 			{/*
@@ -85,14 +85,15 @@ const Projetos = () => {
 			{!!isModalOpen1 && (
 				<Modal
 					titleModal={<div className='flex items-center justify-between'>Detalhes</div>}
-					contentModal={<div className='break-keep text-justify'>Operação Granel é um sistema de Gestão Portuária de granéis sólidos
-						que controla a movimentação de carga de um determinado navio. O sistema tem funções de cadastro de navios, cargas, motoristas,
-						pesagens, documentos... etc. O sistema surgiu a partir de um rompimento inesperado de contrato com uma empresa que tinha um sistema
-						similar. Como foi implementado com base nas necessidades da empresa, nnão podem ser exibidos muitos detalhes mas o necessário:
-						<p>- Sistema seguro e performático</p>
-						<p>- Emissão de notas fiscais a partir da api da MIC</p>
-						<p>- Calculos automáticos e imediatos</p>
+					contentModal={<div className='break-keep text-justify'>
+						<div className="pb-2">O Operação Granel é um sistema de gestão portuária criado para otimizar o controle de cargas de granéis sólidos em navios. Abrangendo funções como cadastro de navios, cargas, pesagens e emissão de documentos, o sistema surgiu após o cancelamento inesperado de um contrato com uma empresa similar.
+							Desenvolvido conforme as necessidades da empresa, o foco recai em:
+						</div>
 
+						<p>-<b className="pr-2">Segurança e Eficiência:</b> O sistema garante segurança de dados e alto desempenho, tornando as informações acessíveis e protegidas.</p>
+						<p>-<b className="pr-2">Integração Simplificada:</b>Através da API da MIC, o Operação Granel automatiza a emissão de notas fiscais, agilizando processos contábeis.</p>
+						<p className="pb-2">-<b className="pr-2">Cálculos Automáticos: </b>O sistema realiza cálculos de forma instantânea, melhorando a precisão e a agilidade nas decisões.</p>
+						O projeto demonstra meu compromisso com soluções personalizadas e eficazes como desenvolvedor full stack.
 
 						<p className="text-2xl w-full flex justify-center my-3 border-b-2">Tecnologias utilizadas</p>
 
@@ -132,12 +133,15 @@ const Projetos = () => {
 			{!!isModalOpen2 && (
 				<Modal
 					titleModal={<div className='flex items-center justify-between'>Detalhes</div>}
-					contentModal={<div className='break-keep text-justify'>Pets é sistema que foi elaborado em conjunto com uma das minhas formações. Feito com tecnologias atuais,
-						ele conta com várias funçõeo... Login, cadastro de usuario, pets, upload de arquivos e fotos, etc...
-						<p>- Sistema seguro e performático</p>
-						<p>- Funções avançadas de login, adição, edição e etc...</p>
-						<p>- Códigos otimizados</p>
-
+					contentModal={<div className='break-keep text-justify'>
+						<div className="pb-2">
+							O Pets é um sistema desenvolvido em colaboração com uma das minhas formações, utilizando tecnologias de ponta para entregar um conjunto abrangente de funcionalidades.
+							Abrangendo desde autenticação até gerenciamento de animais de estimação, o sistema oferece uma experiência completa e eficiente. Alguns destaques incluem:
+						</div>
+						<p>-<b className="pr-2">Segurança e Desempenho:</b>O sistema Pets é construído com foco em segurança de dados e desempenho otimizado, garantindo que as informações dos usuários e seus pets estejam sempre protegidas e acessíveis de forma ágil.</p>
+						<p>-<b className="pr-2">Recursos Avançados:</b>Com funções avançadas de login, adição e edição de informações, o Pets oferece uma experiência rica em recursos para os usuários, permitindo um gerenciamento personalizado de suas informações e pets.</p>
+						<p className="pb-2">-<b className="pr-2">Códigos Otimizados:</b>A arquitetura do Pets é otimizada para garantir que os códigos sejam eficientes e eficazes, proporcionando uma experiência de usuário fluida e responsiva.</p>
+						Desenvolvido com paixão e expertise, o sistema Pets é um exemplo de minha dedicação em combinar conhecimento técnico com necessidades práticas. Ele reflete meu compromisso em criar soluções tecnológicas que atendam às demandas atuais e entreguem uma experiência de usuário excepcional.
 
 						<p className="text-2xl w-full flex justify-center my-3 border-b-2">Tecnologias utilizadas</p>
 
@@ -181,11 +185,13 @@ const Projetos = () => {
 			{!!isModalOpen3 && (
 				<Modal
 					titleModal={<div className='flex items-center justify-between'>Detalhes</div>}
-					contentModal={<div className='break-keep text-justify'>Todo é um app desenvolvido como projeto de faculdade onde todas as funções de basicas de um sistema (CRUD)
-						são desenvolvidas. Como foi o primeiro contato com framework e hospedagem, o projeto é relativamente simples, mas muito funcional.
-						<p>- Sistema simples</p>
-						<p>- Praticidade de uso</p>
-
+					contentModal={<div className='break-keep text-justify'>
+					<div className="pb-2">
+					O Todo é um aplicativo que surgiu como um projeto acadêmico, trazendo consigo a implementação de funcionalidades essenciais de um sistema (CRUD). Embora tenha sido meu primeiro encontro com frameworks e hospedagem, o projeto, embora simples, é altamente funcional. Destacam-se:
+					</div>
+					<p>-<b className="pr-2">Simplicidade Eficiente:</b> O Todo é um sistema que prioriza a simplicidade, tornando-o acessível e fácil de usar para todos os usuários.</p>
+					<p className="pb-2">-<b className="pr-2">Praticidade no Uso:</b>Desenvolvido para oferecer uma experiência intuitiva, o Todo permite a gestão eficiente de tarefas por meio de suas funções básicas.</p>
+					Este projeto representa minha jornada inicial no desenvolvimento com frameworks e hospedagem, demonstrando meu compromisso em criar soluções que, mesmo simples, entregam uma funcionalidade prática e valiosa.
 
 
 						<p className="text-2xl w-full flex justify-center my-3 border-b-2">Tecnologias utilizadas</p>
@@ -231,12 +237,15 @@ const Projetos = () => {
 			{!!isModalOpen4 && (
 				<Modal
 					titleModal={<div className='flex items-center justify-between'>Detalhes</div>}
-					contentModal={<div className='break-keep text-justify'>Ramais surgiu de uma necessidade rápida. Controlar ramais. Com funções simples 
-					sem muitas autenticações, porém muito funcional na sua principal ideia. 
-						<p>- Sistema intuitivo e muito prático</p>
-						<p>- Filtros a partir de quaisquer argumentos</p>
-						<p>- Emissão de PDF se necessário</p>
-
+					contentModal={<div className='break-keep text-justify'>
+						<div className="pb-2">
+							O Ramais Inteligentes nasceu da necessidade urgente de gerenciar ramais de comunicação interna. Com funcionalidades simples e foco na eficiência,
+							este sistema se destaca por sua abordagem direta e funcional. Algumas características-chave incluem:
+						</div>
+						<p>-<b className="pr-2">Intuitivo e Eficiente:</b>O sistema é projetado para ser intuitivo e altamente prático, tornando a gestão de ramais uma tarefa descomplicada.</p>
+						<p>-<b className="pr-2">Filtragem Flexível:</b>Com a capacidade de aplicar filtros a partir de diversos argumentos, o Ramais Inteligentes permite uma organização personalizada e ágil dos dados.</p>
+						<p className="pb-2">-<b className="pr-2">Emissão de PDF:</b>Quando necessário, o sistema oferece a conveniência da emissão de documentos em formato PDF, agilizando a compartilhamento de informações.</p>
+						Desenvolvido em resposta a uma demanda urgente, o Ramais Inteligentes ilustra minha abordagem ágil e orientada a soluções como desenvolvedor web full stack. Este projeto reflete meu compromisso em criar ferramentas funcionais que atendem às necessidades específicas das empresas de maneira eficaz e direta.
 
 
 						<p className="text-2xl w-full flex justify-center my-3 border-b-2">Tecnologias utilizadas</p>
