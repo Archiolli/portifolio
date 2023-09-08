@@ -1,7 +1,8 @@
+"use client"
 import Image from "next/image";
 import CardSobreMim from "../cardSobreMim";
 import Container from "../container";
-import perfil from "../../utils/img/Perfil.jpg"
+import img2 from "../../../../public/gifs/IMG_82902.jpg"
 
 const SobreMim = () => {
 
@@ -16,7 +17,7 @@ const SobreMim = () => {
         ">
           <div className="w-full h-full max-sm:pb-8 max-sm:px-10 text-center items-center sm:px-5 2xl:pb-10  2xl:px-[10%] ">
             <CardSobreMim titleCard={<div className="flex justify-center">
-              <Image src={perfil} alt="Descrição do GIF" className="max-sm:h-32 max-sm:w-32 md:w-32 md:h-32  rounded-full" /></div>}
+              <Image src={img2} alt="Descrição do GIF" className="max-sm:h-32 max-sm:w-32 md:w-32 md:h-32 rounded-full" /></div>}
             >
               <div className="text-xl  mb-3 font-medium text-white">Competência</div>
               <p className="pb-2">-Desenvolvedor Full-stack</p>

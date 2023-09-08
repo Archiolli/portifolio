@@ -1,4 +1,3 @@
-'use client'
 import { useState, useRef, ReactNode } from 'react';
 
 import Image from 'next/image';
